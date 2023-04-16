@@ -65,11 +65,8 @@ const styles = {
     pt: [0, null, null, null, null, null, null, 3],
     gridGap: ['35px 0', null, '40px 0'],
     gridTemplateColumns: [
-      'repeat(1,1fr)',
-      null,
-      'repeat(2,1fr)',
-      null,
       'repeat(3,1fr)',
+      null,
     ],
     width: ['100%', '80%', '100%'],
     mx: 'auto',

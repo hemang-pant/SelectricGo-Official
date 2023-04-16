@@ -9,10 +9,14 @@ export default [
   },
   {
     path: 'testimonial',
-    label: 'About',
+    label: 'Team',
   },
   {
-    path: 'pricing',
-    label: 'Team',
+    path: 'faq',
+    label: 'FAQ',
+  },
+  {
+    path: 'footer',
+    label: 'About Us',
   },
 ];

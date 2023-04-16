@@ -20,7 +20,7 @@ export default [
       },
       {
         path: '/',
-        label: 'Popular Campaign',
+        label: '',
       },
     ],
   },
@@ -49,31 +49,7 @@ export default [
       },
     ],
   },
-  {
-    header: 'My Account',
-    items: [
-      {
-        path: '/',
-        label: 'Press inquiries',
-      },
-      {
-        path: '/',
-        label: 'Social media ',
-      },
-      {
-        path: '/',
-        label: 'directories',
-      },
-      {
-        path: '/',
-        label: 'Images & B-roll',
-      },
-      {
-        path: '/',
-        label: 'Permissions',
-      },
-    ],
-  },
+  
   {
     header: 'Policy',
     items: [

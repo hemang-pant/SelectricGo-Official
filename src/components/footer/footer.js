@@ -4,7 +4,7 @@ import { Link } from 'components/link';
 import menuItems from './footer.data';
 export default function Footer() {
   return (
-    <footer sx={styles.footer}>
+    <footer id= "footer" sx={styles.footer}>
       <Container sx={styles.footer.container}>
         <Box sx={styles.footer.footerTopArea}>
           {menuItems.map(({ header, items }, i) => (

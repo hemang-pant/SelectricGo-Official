@@ -15,7 +15,7 @@ const data = [
     id: 1,
     imgSrc: Smart,
     altText: 'Smart',
-    title: 'Smart Features',
+    title: 'Optimized Route Planning',
     text:
       'Get your blood tests delivered at let home collect sample from the victory of the managements.',
   },
@@ -23,7 +23,7 @@ const data = [
     id: 2,
     imgSrc: Winner,
     altText: 'Performance',
-    title: 'Fast Performance',
+    title: 'More Charging Stations',
     text:
       'Get your blood tests delivered at let home collect sample from the victory of the managements.',
   },
@@ -31,7 +31,7 @@ const data = [
     id: 3,
     imgSrc: Cloud,
     altText: 'Content',
-    title: 'Unlimited Content',
+    title: 'IOS App',
     text:
       'Get your blood tests delivered at let home collect sample from the victory of the managements.',
   },
@@ -39,26 +39,26 @@ const data = [
     id: 4,
     imgSrc: Setting,
     altText: 'Customization',
-    title: 'Unlimited Customization',
+    title: 'Better User Experience',
     text:
       'Get your blood tests delivered at let home collect sample from the victory of the managements.',
   },
-  {
-    id: 5,
-    imgSrc: Design,
-    altText: 'Productivity',
-    title: 'Boost Productivity',
-    text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
-  },
-  {
-    id: 6,
-    imgSrc: Chat,
-    altText: 'Support',
-    title: 'Customer Support',
-    text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
-  },
+  // {
+  //   id: 5,
+  //   imgSrc: Design,
+  //   altText: 'Productivity',
+  //   title: 'Bug Fixes',
+  //   text:
+  //     'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+  // },
+  // {
+  //   id: 6,
+  //   imgSrc: Chat,
+  //   altText: 'Support',
+  //   title: 'Customer Support',
+  //   text:
+  //     'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+  // },
 ];
 
 export default function Feature() {
@@ -106,7 +106,7 @@ const styles = {
       null,
       'repeat(2,1fr)',
       null,
-      'repeat(3,1fr)',
+      
     ],
   },
 };

@@ -18,13 +18,10 @@ const data = {
 
 export default function SecurePayment() {
   return (
-    <section sx={{ variant: 'section.securePayment' }}>
+    <section id="achievements"sx={{ variant: 'section.securePayment' }}>
       <Box sx={styles.bgOverlay} />
       <Container sx={styles.containerBox}>
-        <Box sx={styles.thumbnail}>
-          <Image src={PaymentThumb} alt={data.title} />
-        </Box>
-        <Box sx={styles.contentBox}>
+      <Box sx={styles.contentBox}>
           <TextFeature
             subTitle={data.subTitle}
             title={data.title}
@@ -32,6 +29,9 @@ export default function SecurePayment() {
             btnName={data.btnName}
             btnURL={data.btnURL}
           />
+        </Box>
+        <Box sx={styles.thumbnail}>
+          <Image src={PaymentThumb} alt={data.title} />
         </Box>
       </Container>
     </section>
@@ -68,7 +68,8 @@ const styles = {
   },
   thumbnail: {
     mb: -2,
-    ml: [-4, '-40px', null, null, 0],
+    marginLeft: 'auto',
+    mr: [0, null, null, -6, -7, -8, -9, -10],
     order: [2, null, null, 0],
     pr: [6, null, 7, 0],
   },

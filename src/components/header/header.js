@@ -14,6 +14,7 @@ export default function Header({ className }) {
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
+          <Logo src={LogoWhite} />
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
               <Link
@@ -64,7 +65,7 @@ const styles = {
       position: 'fixed',
       backgroundColor: 'background',
       color: '#000000',
-      boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
+      boxShadow: '0px 1px rgba(0, 0, 0, 0.06)',
       py: 3,
       'nev > a': {
         color: 'text',

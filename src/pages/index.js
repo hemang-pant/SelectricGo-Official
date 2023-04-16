@@ -20,7 +20,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 004" />
+          <SEO title="SelectricGO" />
           <Banner />
           <KeyFeature />
           <CoreFeature />
@@ -29,7 +29,6 @@ export default function IndexPage() {
           <WorkFlow />
           <TestimonialCard />
           <SecurePayment />
-          <Package />
           <Faq />
         </Layout>
       </StickyProvider>

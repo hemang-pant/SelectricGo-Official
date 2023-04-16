@@ -9,6 +9,8 @@ import Avatar1 from 'assets/testimonial/avatar1.png';
 import Avatar2 from 'assets/testimonial/avatar2.png';
 import Avatar3 from 'assets/testimonial/avatar3.png';
 import Avatar4 from 'assets/testimonial/avatar4.png';
+import Avatar5 from 'assets/testimonial/avatar5.png';
+import Avatar6 from 'assets/testimonial/avatar6.png';
 
 const data = [
   {
@@ -17,8 +19,8 @@ const data = [
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar1,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
+    name: 'Rishabh Sharma',
+    designation: 'Co-founder, CEO',
     review: 4,
   },
   {
@@ -27,8 +29,8 @@ const data = [
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar2,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
+    name: 'Tanya Sharma',
+    designation: 'Co-founder, CMO',
     review: 5,
   },
   {
@@ -37,8 +39,8 @@ const data = [
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar3,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
+    name: 'Muktanshu Mishra',
+    designation: 'CTO',
     review: 5,
   },
   {
@@ -47,10 +49,30 @@ const data = [
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar4,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
+    name: 'Promit Mandal',
+    designation: 'Hardware Engineer',
     review: 4,
   },
+  {
+    id: 5,
+    title: 'Modern look & trending design',
+    description:
+      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+    avatar: Avatar5,
+    name: 'Animesh Mandal',
+    designation: 'Content Creator',
+    review: 4,
+  },
+  {
+    id: 6,
+    title: 'Modern look & trending design',
+    description:
+      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+    avatar: Avatar6,
+    name: 'Hemang Pant',
+    designation: 'App Developer',
+    review: 4,
+  }
 ];
 
 const responsive = {
@@ -248,7 +270,7 @@ const styles = {
     lineHeight: 1.3,
   },
   designation: {
-    color: '#25A0FF',
+    color: '#ACCEC7',
     fontWeight: '500',
     fontSize: 1,
     lineHeight: 1.4,

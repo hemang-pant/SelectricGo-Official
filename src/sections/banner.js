@@ -28,9 +28,11 @@ export default function Banner() {
             Locate the Best Charging station near you, Navigate their and Get your ride all charged up.
           </Text>
           <Flex>
-            <Button  onClick={(e) => handleClick(e, "/posts")} variant="whiteButton" aria-label="Get Started">
-              Download the App
-            </Button>
+            <Link path="https://play.google.com/store/apps/details?id=com.selectricgo.selectricgoapp" target="_blank">
+              <Button variant="whiteButton" aria-label="Get Started">
+                Download the App
+              </Button>
+            </Link>
           </Flex>
         </Box>
 
