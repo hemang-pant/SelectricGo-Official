@@ -4,7 +4,7 @@ import { Container, Box } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import Image from 'components/image';
 
-import PaymentThumb from 'assets/paymentThumb.png';
+import PaymentThumb from 'assets/paymentthumb.svg';
 import PaymentPattern from 'assets/payment-pattern.png';
 
 const data = {
