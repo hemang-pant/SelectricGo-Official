@@ -17,7 +17,7 @@ const data = [
     altText: 'Smart',
     title: 'Optimized Route Planning',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'The feature that enables you to plane a route for your long distance journey and travel without hassles!',
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const data = [
     altText: 'Performance',
     title: 'More Charging Stations',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'We are constantly updating our database and adding more charging stations on our web.',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const data = [
     altText: 'Content',
     title: 'IOS App',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'Why only Android? SelectricGo will be available on Apple Store soon!',
   },
   {
     id: 4,
@@ -41,24 +41,24 @@ const data = [
     altText: 'Customization',
     title: 'Better User Experience',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      "We are constantly upgrading our designs and working on the user's experience.",
   },
-  // {
-  //   id: 5,
-  //   imgSrc: Design,
-  //   altText: 'Productivity',
-  //   title: 'Bug Fixes',
-  //   text:
-  //     'Get your blood tests delivered at let home collect sample from the victory of the managements.',
-  // },
-  // {
-  //   id: 6,
-  //   imgSrc: Chat,
-  //   altText: 'Support',
-  //   title: 'Customer Support',
-  //   text:
-  //     'Get your blood tests delivered at let home collect sample from the victory of the managements.',
-  // },
+  {
+    id: 5,
+    imgSrc: Design,
+    altText: 'Traffic',
+    title: 'Live Traffic',
+    text:
+      'Get live information about the status of the charging station you find best for you.',
+  },
+  {
+    id: 6,
+    imgSrc: Chat,
+    altText: 'Slot',
+    title: 'Slot Booking',
+    text:
+      'Book a slot! Now get a hassle and queue free charging experience.',
+  },
 ];
 
 export default function Feature() {
@@ -66,7 +66,7 @@ export default function Feature() {
     <section sx={{ variant: 'section.feature' }}>
       <Container>
         <SectionHeader
-          slogan="Future Roadmap"
+          slogan="Upcoming Brainstormings"
           title="What's coming up next?"
         />
 

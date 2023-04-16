@@ -3,9 +3,10 @@ import { jsx, Container, Box, Grid, Text, Heading } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import Image from 'components/image';
 
-import CoreFeatureThumb from 'assets/coreFeature.png';
-import Briefcase from 'assets/core-feature/briefcase.svg';
-import Secure from 'assets/core-feature/secure.svg';
+import CoreFeatureThumb from 'assets/MockupFeature.svg';
+import Briefcase from 'assets/core-feature/charging.png';
+import Secure from 'assets/core-feature/booking.png';
+import Route from 'assets/core-feature/route.png';
 
 const data = {
   subTitle: 'Core features',
@@ -17,16 +18,24 @@ const data = {
       altText: 'Charging Information',
       title: 'Charging Information',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Get information and specifications for your nearest charging station. Ease your way out of searching for the best charging station near you!',
     },
     {
       id: 2,
+      imgSrc: Route,
+      altText: 'Navigation',
+      title: 'Navigation Assistance',
+      text:
+        'The App assists you to navigate through the ways and get to your selected charging station.',
+    },
+    {
+      id: 3,
       imgSrc: Secure,
       altText: 'Slot Booking',
       title: 'Slot Booking',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
-    },
+        'In a hurry? Book a slot for your charging period and get the best service!',
+    }
   ],
 };
 
@@ -34,9 +43,7 @@ export default function CoreFeature() {
   return (
     <section sx={styles.coreFeature}>
       <Container sx={styles.containerBox}>
-        <Box sx={styles.thumbnail}>
-          <Image src={CoreFeatureThumb} alt="Thumbnail" />
-        </Box>
+        <Image src={CoreFeatureThumb} alt="Thumbnail" />
         <Box sx={styles.contentBox}>
           <Box sx={styles.headingTop}>
             <TextFeature subTitle={data.subTitle} title={data.title} />
@@ -64,20 +71,6 @@ const styles = {
   coreFeature: {
     py: [0, null, null, 2, null, 7],
     position: 'relative',
-    '&::before': {
-      position: 'absolute',
-      content: '""',
-      top: ['auto', null, null, '50%'],
-      bottom: ['100px', 0, null, 'auto'],
-      left: 0,
-      background: 'linear-gradient(-157deg, #F6FAFD, #F9FCFC, #FCFDFC)',
-      height: [350, 550, '60%'],
-      width: '50%',
-      zIndex: -1,
-      borderTopRightRadius: '50%',
-      borderBottomRightRadius: '50%',
-      transform: ['translateY(0)', null, null, 'translateY(-50%)'],
-    },
   },
   containerBox: {
     display: 'flex',
