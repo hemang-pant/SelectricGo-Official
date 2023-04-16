@@ -3,7 +3,7 @@ import { jsx, Container, Box, Grid, Text, Heading } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import Image from 'components/image';
 
-import CoreFeatureThumb from 'assets/coreFeature.png';
+import CoreFeatureThumb from 'assets/download-app.svg';
 import Briefcase from 'assets/core-feature/briefcase.svg';
 import Secure from 'assets/core-feature/secure.svg';
 
@@ -86,6 +86,7 @@ const styles = {
     flexDirection: ['column', null, null, 'row'],
   },
   thumbnail: {
+    width: ['100%', 450, 550, 350, 500, 570],
     pl: [0, 5, 0, null, 7, 95],
     pr: [0, 5, null, null, null, 75, 95],
     order: [2, null, null, 0],

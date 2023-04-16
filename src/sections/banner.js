@@ -68,6 +68,7 @@ const styles = {
       pt: [0, null, null, null, null, null, 5, 7],
     },
     imageBox: {
+      maxWidth: ['200%', null, null, '50%', '50%', '50%'],
       // display: ['none', null, null, 'block'],
       justifyContent: 'center',
       // ml: [0, null, null, '-110px', '-115px', '-150px', '-210px', '-270px'],
@@ -75,8 +76,9 @@ const styles = {
       // mt: [0, null, null, '40px', 4, 7, 0],
       // mb: [0, null, null, null, '-45px', '-70px', null, '-115px'],
       overflow: 'hidden',
-      textAlign: 'right',
-      width: '100%',
+      textAlign: 'left',
+      //width: '100%',
+      size: '200%',
     },
   },
   sponsorTitle: {
