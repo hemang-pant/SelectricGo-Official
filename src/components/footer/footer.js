@@ -71,7 +71,7 @@ const styles = {
 
     link: {
       fontSize: ['14px', null, 1],
-      color: 'text',
+      color: 'white',
       fontWeight: 'body',
       mb: 2,
       cursor: 'pointer',
