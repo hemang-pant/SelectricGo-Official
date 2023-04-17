@@ -57,14 +57,7 @@ export default [
         path: '/',
         label: 'Software principles',
       },
-      {
-        path: '/',
-        label: 'Unwanted software policy',
-      },
-      {
-        path: '/',
-        label: 'Responsible supply chain',
-      },
+      
     ],
   },
   {

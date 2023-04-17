@@ -80,7 +80,7 @@ const styles = {
       textDecoration: 'none',
       lineHeight: [1.5, null, null, 1.6, 1.8],
       ':hover': {
-        color: 'primary',
+        color: 'white',
       },
       ':last-child': {
         mb: '0px',

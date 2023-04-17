@@ -40,7 +40,7 @@ const data = {
 
 export default function CoreFeature() {
   return (
-    <section sx={styles.coreFeature}>
+    <section id="features" sx={styles.coreFeature}>
       <Container sx={styles.containerBox}>
         <Image src={CoreFeatureThumb} alt="Thumbnail" />
         <Box sx={styles.contentBox}>

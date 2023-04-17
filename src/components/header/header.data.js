@@ -4,7 +4,7 @@ export default [
     label: 'Home',
   },
   {
-    path: 'feature',
+    path: 'features',
     label: 'Features',
   },
   {
