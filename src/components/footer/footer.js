@@ -2,6 +2,7 @@
 import { jsx, Heading, Box, Container, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import menuItems from './footer.data';
+import BannerBG from 'assets/bannerBg.png';
 export default function Footer() {
   return (
     <footer id= "footer" sx={styles.footer}>
@@ -36,7 +37,14 @@ export default function Footer() {
 
 const styles = {
   footer: {
+    backgroundColor: 'black',
     container: {
+    //   backgroundImage: `url(${BannerBG})`,
+    // backgroundRepeat: `no-repeat`,
+    // backgroundPosition: 'top left',
+    // backgroundSize: 'cover',
+      backgroundColor: 'black',
+      //background: 'linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(11,68,75,1) 50%, rgba(0,0,0,1) 100%)',
       width: '100%',
       alignItems: 'stretch',
     },
@@ -58,7 +66,7 @@ const styles = {
 
     heading: {
       fontSize: [3, null, null, 4],
-      color: 'text_secondary',
+      color: 'white',
       fontWeight: '500',
       mb: [3, 4, 5, null, 6],
       lineHeight: '1.35',

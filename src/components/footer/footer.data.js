@@ -29,10 +29,6 @@ export default [
     items: [
       {
         path: '/',
-        label: 'Return Policy ',
-      },
-      {
-        path: '/',
         label: 'Privacy Policy',
       },
       {
@@ -68,6 +64,27 @@ export default [
       {
         path: '/',
         label: 'Responsible supply chain',
+      },
+    ],
+  },
+  {
+    header: 'Socials',
+    items: [
+      {
+        path: 'https://www.facebook.com/SelectricGo.official',
+        label: 'Facebook',
+      },
+      {
+        path: 'https://twitter.com/go_selectric',
+        label: 'Twitter',
+      },
+      {
+        path: 'https://www.instagram.com/selectricgo/',
+        label: 'Instagram',
+      },
+      {
+        path: 'https://www.linkedin.com/company/selectricgocompany/',
+        label: 'Linkedin',
       },
     ],
   },
