@@ -6,8 +6,8 @@ import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
 
 import Avatar1 from 'assets/testimonial/avatar1.png';
-import Avatar2 from 'assets/testimonial/avatar2.png';
-import Avatar3 from 'assets/testimonial/avatar3.png';
+import Avatar2 from 'assets/testimonial/Tanya Cof.png';
+import Avatar3 from 'assets/testimonial/avatar3.jpeg';
 import Avatar4 from 'assets/testimonial/avatar4.png';
 import Avatar5 from 'assets/testimonial/avatar5.png';
 import Avatar6 from 'assets/testimonial/avatar6.png';
@@ -137,13 +137,14 @@ export default function TestimonialCard() {
                 <div className="image">
                   <Image src={item.avatar} alt="Client Image" />
                 </div>
-                <div className="reviewer-info">
+                
+              </div>
+              <div className="reviewer-info">
                   <Heading as="h4" sx={styles.heading}>
                     {item.name}
                   </Heading>
                   <Text sx={styles.designation}>{item.designation}</Text>
                 </div>
-              </div>
             </Box>
           ))}
         </Carousel>
@@ -241,8 +242,9 @@ const styles = {
         mr: [3, null, null, 4],
         display: 'flex',
         img: {
-          width: '55px',
-          height: '55px',
+          width: '150px',
+          height: '150px',
+          alignItems: 'center',
           borderRadius: '50%',
           objectFit: 'cover',
         },

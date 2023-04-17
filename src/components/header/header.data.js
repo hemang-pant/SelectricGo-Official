@@ -12,11 +12,11 @@ export default [
     label: 'Team',
   },
   {
-    path: 'faq',
-    label: 'FAQ',
+    path: '',
+    label: 'About',
   },
   {
     path: 'footer',
-    label: 'About Us',
+    label: 'Contact Us',
   },
 ];

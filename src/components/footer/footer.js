@@ -26,10 +26,7 @@ export default function Footer() {
         </Box>
       </Container>
       <Text sx={styles.footer.copyright}>
-        All right reserved - Design & Developed by
-        <Link path="https://redq.io/" target="_blank">
-          RedQ, Inc
-        </Link>
+        All right reserved - Design & Developed by SelectricGo
       </Text>
     </footer>
   );

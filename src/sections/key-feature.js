@@ -6,6 +6,7 @@ import FeatureCardColumn from 'components/feature-card-column.js';
 import Vector from 'assets/key-feature/vector.svg';
 import Editing from 'assets/key-feature/editing.svg';
 import Speed from 'assets/key-feature/speed.svg';
+import PatternBG from 'assets/patternBG.png';
 
 const data = [
   {
@@ -36,7 +37,7 @@ const data = [
 
 export default function KeyFeature() {
   return (
-    <section sx={{ variant: 'section.keyFeature' }} id="feature">
+    <section sx={styles.workflow} id="feature">
       <Container>
         <SectionHeader
           slogan="Quality features"
@@ -60,6 +61,28 @@ export default function KeyFeature() {
 }
 
 const styles = {
+  workflow: {
+    backgroundColor: 'primary',
+    backgroundImage: `url(${PatternBG})`,
+    backgroundRepeat: `no-repeat`,
+    backgroundPosition: 'center center',
+    backgroundSize: 'cover',
+    position: 'relative',
+    py: [8, null, 9, null, null, 10],
+    '&::before': {
+      position: 'absolute',
+      content: '""',
+      top: 0,
+      right: 0,
+      background:
+        'linear-gradient(-45deg, rgba(42,72,125, 0.3) 25%, transparent 25%, transparent 50%, rgba(42,72,125, 0.3) 50%, rgba(42,72,125, 0.3) 75%, transparent 75%, transparent)',
+      width: '100%',
+      backgroundSize: '350px 350px',
+      height: '100%',
+      opacity: 0.3,
+      zIndex: 0,
+    },
+  },
   grid: {
     px: [0, null, null, '40px', null, '10px'],
     pt: [0, null, null, null, null, null, null, 3],
