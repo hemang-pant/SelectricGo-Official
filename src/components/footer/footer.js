@@ -91,8 +91,8 @@ const styles = {
       width: '100%',
       textAlign: 'center',
       p: ['20px 20px'],
-      backgroundColor: '#FCFDFE',
-      color: 'text',
+      backgroundColor: 'black',
+      color: 'grey',
       a: {
         textDecoration: 'none',
         color: 'inherit',

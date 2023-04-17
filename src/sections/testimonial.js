@@ -129,16 +129,17 @@ export default function TestimonialCard() {
         >
           {data.map((item) => (
             <Box sx={styles.reviewCard} key={`testimonial--key${item.id}`}>
+            <div className="card-footer">
+            
+            <div className="image">
+            
+              <Image src={item.avatar} alt="Client Image" />
+            </div>
+            </div>
               <Heading as="h3" sx={styles.title}>
                 {item.title}
               </Heading>
               <Text sx={styles.description}>{item.description}</Text>
-              <div className="card-footer">
-                <div className="image">
-                  <Image src={item.avatar} alt="Client Image" />
-                </div>
-                
-              </div>
               <div className="reviewer-info">
                   <Heading as="h4" sx={styles.heading}>
                     {item.name}
@@ -199,7 +200,7 @@ const styles = {
       '35px 30px 40px 40px',
     ],
     bg: 'white',
-    textAlign: 'left',
+    textAlign: 'center',
     m: [
       '28px 5px 30px 5px',
       '28px 20px 30px 20px',
@@ -235,15 +236,18 @@ const styles = {
     },
     '.card-footer': {
       display: 'flex',
+      textAlign: 'center',
       alignItems: 'center',
       marginTop: [5, null, null, '33px'],
       '.image': {
-        flexShrink: 0,
-        mr: [3, null, null, 4],
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        //flexShrink: 0,
+        //mr: [0, null, null, 0],
         display: 'flex',
         img: {
-          width: '150px',
-          height: '150px',
+          width: '200px',
+          height: '200px',
           alignItems: 'center',
           borderRadius: '50%',
           objectFit: 'cover',
@@ -254,6 +258,7 @@ const styles = {
   title: {
     fontSize: [1, 2],
     fontWeight: 700,
+    mt: [3, null, null, '22px'],
     mb: [3, null, null, '22px'],
     color: 'text',
     lineHeight: 1.6,
