@@ -10,7 +10,7 @@ export function NavLink({ path, label, children, ...rest }) {
 }
 export function Link({ path, label, children, ...rest }) {
   return (
-    <A {...rest} href={path}>
+    <A {...rest} href={path} target="_blank">
       {children ? children : label}
     </A>
   );
