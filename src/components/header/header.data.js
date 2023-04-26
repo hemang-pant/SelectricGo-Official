@@ -8,12 +8,12 @@ export default [
     label: 'Features',
   },
   {
-    path: 'testimonial',
-    label: 'Team',
+    path: 'achievements',
+    label: 'Achievements',
   },
   {
-    path: '',
-    label: 'About',
+    path: 'testimonial',
+    label: 'Team',
   },
   {
     path: 'footer',

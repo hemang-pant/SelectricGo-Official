@@ -27,7 +27,7 @@ export default function TextFeature({
 
       {btnName && (
         <Link href={btnURL} variant="default">
-          <Button variant="primary" aria-label={btnName}>
+          <Button variant="whiteButton" aria-label={btnName}>
             {btnName}
           </Button>
         </Link>
@@ -53,7 +53,7 @@ const styles = {
     mt: '-5px',
     title: {
       fontSize: ['24px', null, '28px', '32px', '36px', '42px', null, '46px'],
-      color: 'heading_secondary',
+      color: 'white',
       lineHeight: [1.35, null, null, 1.3, 1.2],
       fontWeight: '700',
       letterSpacing: '-.5px',
@@ -62,7 +62,7 @@ const styles = {
 
     subTitle: {
       fontSize: [0, null, '14px'],
-      color: 'heading',
+      color: 'secondary',
       letterSpacing: '2px',
       textTransform: 'uppercase',
       fontWeight: '700',
@@ -74,7 +74,7 @@ const styles = {
     fontSize: ['15px', 2, null, null, null, '17px', null, 3],
     fontWeight: 400,
     lineHeight: [1.85, null, null, 2, null, '2.2'],
-    color: 'text_secondary',
+    color: 'grey',
     mb: '30px',
   },
 };

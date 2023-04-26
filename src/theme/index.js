@@ -99,6 +99,7 @@ export default {
       overflow: 'hidden',
     },
     securePayment: {
+      backgroundColor: 'black',
       overflow: 'hidden',
       position: 'relative',
       pt: 9,

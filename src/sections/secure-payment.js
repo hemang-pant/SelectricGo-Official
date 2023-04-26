@@ -8,7 +8,7 @@ import PaymentThumb from 'assets/paymentthumb.svg';
 import PaymentPattern from 'assets/payment-pattern.png';
 
 const data = {
-  subTitle: 'PAYMENT SECURITY',
+  subTitle: 'Achievements',
   title: 'Secure Payment Transaction System with #1 Ranking',
   description:
     'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.',
@@ -55,6 +55,7 @@ const styles = {
       null,
       'calc(50% + 625px)',
     ],
+    
     backgroundImage: `url(${PaymentPattern})`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: 'top left',
