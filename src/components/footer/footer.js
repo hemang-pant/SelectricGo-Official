@@ -63,7 +63,7 @@ const styles = {
 
     heading: {
       fontSize: [3, null, null, 4],
-      color: 'white',
+      color: 'secondary',
       fontWeight: '500',
       mb: [3, 4, 5, null, 6],
       lineHeight: '1.35',
