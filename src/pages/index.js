@@ -23,7 +23,7 @@ export default function IndexPage() {
           <SEO title="SelectricGO" />
           <Banner />
           <CoreFeature />
-          {/* <WorkFlow /> */}
+          <WorkFlow /> 
           <Feature />
           {/* <KeyFeature /> */}
           <TestimonialCard />

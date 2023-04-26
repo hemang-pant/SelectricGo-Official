@@ -9,7 +9,7 @@ export default function Footer() {
       <Container sx={styles.footer.container}>
         <Box sx={styles.footer.footerTopArea}>
           {menuItems.map(({ header, items }, i) => (
-            <Box sx={styles.footer.menus} key={i}>
+            <Box sx={styles.footer.menus} key={i}>line
               <Heading sx={styles.footer.heading}>{header}</Heading>
               <nav>
                 {items.map(({ path, label }, i) => (

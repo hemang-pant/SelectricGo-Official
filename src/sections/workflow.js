@@ -9,26 +9,30 @@ import ArrowEven from 'assets/arrowEven.png';
 
 const data = [
   {
-    id: 1,
-    title: 'Biz dev 1',
+    id: '1',
+    title: 'The SelectricGo V2',
+    subheading: 'Start 2023',
     text:
-      'Biz dev 1 long text',
+      'We have planned to release Version 2 of our Application, planned to include Payment Gateway, Slot Options and Smoother UI.',
   },
   {
     id: 2,
-    title: 'Biz dev 2',
+    title: 'The Integration Spell',
+    subheading: 'March 2023',
     text:
-      'Biz dev 2 long text',  },
+      'After acquiring a better version of our app, we will look towards further Integrations and a Business Development cycle.',  },
   {
     id: 3,
-    title: 'Biz dev 3',
+    title: 'The Executive & Finance Outlook',
+    subheading: 'Start Q3',
     text:
-      'Biz dev 3 long text',  },
+      'After having our first clients and constant improvement in the Infrastructure. We plan to get the execution and funding in place.',  },
   {
     id: 4,
-    title: 'Biz dev 4',
+    title: 'The SelectricGo V3',
+    subheading: 'Starts Q4',
     text:
-      'Biz dev 4 long text',  },
+      'We believe in constant technical development, hence Version 3 of our application will be planned. Equipping the Machine Learning Recommendation and slot booking is the envisioned model of our app.',  },
 ];
 
 export default function WorkFlow() {
@@ -44,9 +48,10 @@ export default function WorkFlow() {
         <Grid sx={styles.grid}>
           {data.map((item) => (
             <Box sx={styles.card} key={item.id}>
-              <Box sx={styles.iconBox}>{`0${item.id}`}</Box>
+              <Box sx={styles.iconBox}>{`${item.id}`}</Box>
               <Box sx={styles.wrapper}>
                 <Heading sx={styles.wrapper.title}>{item.title}</Heading>
+                <Text sx={styles.wrapper.subheading}>{item.subheading}</Text>
                 <Text sx={styles.wrapper.subTitle}>{item.text}</Text>
               </Box>
             </Box>
@@ -156,12 +161,19 @@ const styles = {
     mt: '-5px',
     title: {
       fontSize: [3, null, 4, null, null, 5],
-      color: 'white',
+      color: 'secondary',
       lineHeight: [1.4, null, null, null, null, 1.55],
       pr: [0, null, null, null, null, 2],
       mb: [2, 3],
     },
-
+    subheading: {
+      fontSize: 1,
+      fontWeight: 800,
+      lineHeight: [1.85, null, null, 1.9, 2],
+      color: 'white',
+      opacity: 0.95,
+      pr: [0, null, null, null, null, 5],
+    },
     subTitle: {
       fontSize: 1,
       fontWeight: 400,
