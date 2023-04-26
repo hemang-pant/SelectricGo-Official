@@ -15,17 +15,26 @@ import Avatar6 from 'assets/testimonial/avatar6.png';
 const data = [
   {
     id: 1,
-    title: 'Modern look & trending design',
+    title: 'Muktanshu Mishra',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar1,
-    name: 'Rishabh Sharma',
-    designation: 'Co-founder, CEO',
+    avatar: Avatar3,
+    name: 'Muktanshu Mishra',
+    designation: 'Co-Founder, CTO',
     review: 4,
   },
   {
     id: 2,
-    title: 'Design Quality & performance',
+    title: 'Rishabh Sharma',
+    description:
+      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+    avatar: Avatar1,
+    designation: 'Co-founder, CEO',
+    review: 5,
+  },
+  {
+    id: 3,
+    title: 'Tanya Sharma',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar2,
@@ -34,18 +43,8 @@ const data = [
     review: 5,
   },
   {
-    id: 3,
-    title: 'Layout and organized layers',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar3,
-    name: 'Muktanshu Mishra',
-    designation: 'CTO',
-    review: 5,
-  },
-  {
     id: 4,
-    title: 'Modern look & trending design',
+    title: 'Promit Mandal',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar4,
@@ -55,7 +54,7 @@ const data = [
   },
   {
     id: 5,
-    title: 'Modern look & trending design',
+    title: 'Animesh Mandal',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar5,
@@ -65,7 +64,7 @@ const data = [
   },
   {
     id: 6,
-    title: 'Modern look & trending design',
+    title: 'Hemang Pant',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar6,
@@ -139,13 +138,8 @@ export default function TestimonialCard() {
               <Heading as="h3" sx={styles.title}>
                 {item.title}
               </Heading>
+              <Text sx={styles.designation}>{item.designation}</Text>
               <Text sx={styles.description}>{item.description}</Text>
-              <div className="reviewer-info">
-                  <Heading as="h4" sx={styles.heading}>
-                    {item.name}
-                  </Heading>
-                  <Text sx={styles.designation}>{item.designation}</Text>
-                </div>
             </Box>
           ))}
         </Carousel>
@@ -259,7 +253,7 @@ const styles = {
     fontSize: [1, 2],
     fontWeight: 700,
     mt: [3, null, null, '22px'],
-    mb: [3, null, null, '22px'],
+    // mb: [3, null, null, '22px'],
     color: 'text',
     lineHeight: 1.6,
   },
