@@ -28,6 +28,7 @@ export default function SecurePayment() {
             description={data.description}
             btnName={data.btnName}
             btnURL={data.btnURL}
+            isdark={true}
           />
         </Box>
         <Box sx={styles.thumbnail}>

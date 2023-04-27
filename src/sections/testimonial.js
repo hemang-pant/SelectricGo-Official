@@ -1,10 +1,14 @@
 /** @jsx jsx */
-import { jsx, Container, Heading, Text, Box, Image } from 'theme-ui';
+import { jsx, Container,Button, Heading, Text, Box, Image } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
-
+import {
+  FaTwitter,
+  FaLinkedinIn,FaLinkedin
+} from 'react-icons/fa';
+import { Link } from 'components/link';
 import Avatar1 from 'assets/testimonial/avatar1.png';
 import Avatar2 from 'assets/testimonial/Tanya Cof.png';
 import Avatar3 from 'assets/testimonial/avatar3.jpeg';
@@ -22,6 +26,11 @@ const data = [
     name: 'Muktanshu Mishra',
     designation: 'Co-Founder, CTO',
     review: 4,
+    link: <Link path="https://www.linkedin.com/in/muktanshu-mishra-278a85181/" target="_blank">
+    <Button variant="whiteButton" aria-label="Get Started">
+      <FaLinkedinIn></FaLinkedinIn>
+    </Button>
+  </Link>,
   },
   {
     id: 2,
@@ -31,6 +40,11 @@ const data = [
     avatar: Avatar1,
     designation: 'Co-founder, CEO',
     review: 5,
+    link: <Link path="https://www.linkedin.com/in/rishabh-sharma-924b32212/" target="_blank">
+    <Button variant="whiteButton" aria-label="Get Started">
+      <FaLinkedinIn></FaLinkedinIn>
+    </Button>
+  </Link>,
   },
   {
     id: 3,
@@ -41,6 +55,11 @@ const data = [
     name: 'Tanya Sharma',
     designation: 'Co-founder, CMO',
     review: 5,
+    link:<Link path="" target="_blank">
+    <Button variant="whiteButton" aria-label="Get Started">
+      <FaLinkedinIn></FaLinkedinIn>
+    </Button>
+  </Link>,
   },
   {
     id: 4,
@@ -51,6 +70,12 @@ const data = [
     name: 'Promit Mandal',
     designation: 'Hardware Engineer',
     review: 4,
+    link:
+  <Link path="https://www.linkedin.com/in/promit-mandal-321b47207/" target="_blank">
+    <Button variant="whiteButton" aria-label="Get Started">
+      <FaLinkedinIn></FaLinkedinIn>
+    </Button>
+  </Link>,
   },
   {
     id: 5,
@@ -60,7 +85,12 @@ const data = [
     avatar: Avatar5,
     name: 'Animesh Mandal',
     designation: 'Content Creator',
-    review: 4,
+    review: '4',
+    link: <Link path="https://www.linkedin.com/in/animesh-mandal-6b642b20a/" target="_blank">
+    <Button variant="whiteButton" aria-label="Get Started">
+      <FaLinkedinIn></FaLinkedinIn>
+    </Button>
+  </Link>,
   },
   {
     id: 6,
@@ -71,6 +101,11 @@ const data = [
     name: 'Hemang Pant',
     designation: 'App Developer',
     review: 4,
+    link: <Link path="https://www.linkedin.com/in/hemang-pant-222b7a1a3/" target="_blank">
+    <Button variant="whiteButton" aria-label="Get Started">
+      <FaLinkedinIn></FaLinkedinIn>
+    </Button>
+  </Link>,
   }
 ];
 
@@ -139,6 +174,7 @@ export default function TestimonialCard() {
                 {item.title}
               </Heading>
               <Text sx={styles.designation}>{item.designation}</Text>
+              {item.link}
               <Text sx={styles.description}>{item.description}</Text>
             </Box>
           ))}

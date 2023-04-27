@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
+import TextFeature from 'components/text-feature';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
 import Vector from 'assets/key-feature/vector.svg';
@@ -13,25 +14,24 @@ const data = [
     id: 1,
     imgSrc: Vector,
     altText: 'Vector',
-    title: 'Search',
+    title: 'Achievement 1',
     text:
-      'Locate your nearest charging station through a scan nearby and search option!',
+      'Achievement 1 long text',
   },
   {
     id: 2,
     imgSrc: Editing,
     altText: 'Designate',
-    title: 'Select',
-    text:
-      'Choose your suitable charging station as per the list and fetch information for the same.',
+    title: 'Achievement 2',
+    text: 'Achievement 2 long text',  
   },
   {
     id: 3,
     imgSrc: Speed,
     altText: 'Navigate',
-    title: 'Navigate',
+    title: 'achivement 3',
     text:
-      'Get easy navigation instruction and get your EV Charged Up!',
+      'achievement 3 long text',
   },
 ];
 
@@ -39,11 +39,20 @@ export default function KeyFeature() {
   return (
     <section sx={styles.workflow} id="feature">
       <Container>
-        <SectionHeader
+      <box sx={styles.container}>
+      <TextFeature
+      subTitle={"Quality features"}
+      title={"Meet exciting feature of app"}
+      description={data.description}
+      btnName={data.btnName}
+      btnURL={data.btnURL}
+      isdark={true}
+    />
+    </box>
+    {/*<SectionHeader
           slogan="Quality features"
           title="Meet exciting feature of app"
-        />
-
+  />*/}
         <Grid sx={styles.grid}>
           {data.map((item) => (
             <FeatureCardColumn
@@ -61,6 +70,11 @@ export default function KeyFeature() {
 }
 
 const styles = {
+  container: {
+    pl: [0, null, null, null, '35px', null, '55px', 6],
+    mb: [3, null, null, null, 1],
+    textAlign: ['center', null, null, 'center'],
+  },
   workflow: {
     backgroundColor: 'primary',
     backgroundImage: `url(${PatternBG})`,
