@@ -41,7 +41,7 @@ const positionAnim = keyframes`
   }
   to {
     position: absolute;
-    opacity: 1;
+    opacity: 0.5;
     transition: all 0.4s ease;
   }
 `;
@@ -53,6 +53,7 @@ const styles = {
     py: 4,
     width: '100%',
     position: 'fixed',
+    opacity: 0.8,
     top: 0,
     left: 0,
     backgroundColor: 'transparent',

@@ -36,14 +36,15 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     title: {
-      fontSize: [3, null, null, null, null, 4],
-      color: 'heading_secondary',
+      fontSize: [3, null, null, null, null, 5],
+      color: 'white',
       lineHeight: 1.4,
       fontWeight: 700,
       mb: [2, null, null, null, null, 3],
     },
 
     subTitle: {
+      color: 'grey',
       fontSize: 1,
       fontWeight: 400,
       lineHeight: [1.85, null, null, 1.9, 2],

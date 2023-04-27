@@ -45,7 +45,7 @@ export default function CoreFeature() {
         <Image src={CoreFeatureThumb} alt="Thumbnail" />
         <Box sx={styles.contentBox}>
           <Box sx={styles.headingTop}>
-            <TextFeature subTitle={data.subTitle} title={data.title} />
+            <TextFeature isdark={false} subTitle={data.subTitle} title={data.title} />
           </Box>
 
           <Grid gap="15px 0" columns={1} sx={styles.grid}>

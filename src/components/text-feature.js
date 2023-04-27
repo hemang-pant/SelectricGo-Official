@@ -7,6 +7,7 @@ export default function TextFeature({
   description,
   btnName,
   btnURL = '#',
+  isdark = true,
 }) {
   return (
     <Box sx={styles.card}>
@@ -14,9 +15,16 @@ export default function TextFeature({
         <Text as="p" sx={styles.wrapper.subTitle}>
           {subTitle}
         </Text>
-        <Heading as="h2" sx={styles.wrapper.title}>
+        {isdark && (
+          <Heading as="h2" sx={styles.wrapper.titlewhite}>
           {title}
         </Heading>
+        )}
+        {!isdark && (
+          <Heading as="h2" sx={styles.wrapper.titleblack}>
+          {title}
+        </Heading>
+      )}
       </Box>
 
       {description && (
@@ -51,9 +59,17 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     mt: '-5px',
-    title: {
+    titlewhite: {
       fontSize: ['24px', null, '28px', '32px', '36px', '42px', null, '46px'],
       color: 'white',
+      lineHeight: [1.35, null, null, 1.3, 1.2],
+      fontWeight: '700',
+      letterSpacing: '-.5px',
+      mb: 5,
+    },
+    titleblack: {
+      fontSize: ['24px', null, '28px', '32px', '36px', '42px', null, '46px'],
+      color: 'black',
       lineHeight: [1.35, null, null, 1.3, 1.2],
       fontWeight: '700',
       letterSpacing: '-.5px',

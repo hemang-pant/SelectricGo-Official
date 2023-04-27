@@ -1,15 +1,10 @@
 /** @jsx jsx */
-import { jsx, Container, Heading, Text, Box, Image } from 'theme-ui';
+import { jsx, Container,Button, Heading, Text, Box, Image } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaGithubAlt,
-  FaDribbble,FaLinkedin
-} from 'react-icons/fa';
+
 import Avatar1 from 'assets/testimonial/avatar1.png';
 import Avatar2 from 'assets/testimonial/Tanya Cof.png';
 import Avatar3 from 'assets/testimonial/avatar3.jpeg';
@@ -20,63 +15,93 @@ import Avatar6 from 'assets/testimonial/avatar6.png';
 const data = [
   {
     id: 1,
-    title: 'Modern look & trending design',
+    title: 'Muktanshu Mishra',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar1,
-    name: 'Rishabh Sharma',
-    designation: 'Co-founder, CEO',
+    avatar: Avatar3,
+    name: 'Muktanshu Mishra',
+    designation: 'Co-Founder, CTO',
     review: 4,
+    link: <Link path="https://www.linkedin.com/in/muktanshu-mishra-278a85181/" target="_blank">
+    <Button variant="whiteButton" aria-label="Get Started">
+      <FaLinkedinIn></FaLinkedinIn>
+    </Button>
+  </Link>,
   },
   {
     id: 2,
-    title: 'Design Quality & performance',
+    title: 'Rishabh Sharma',
+    description:
+      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+    avatar: Avatar1,
+    designation: 'Co-founder, CEO',
+    review: 5,
+    link: <Link path="https://www.linkedin.com/in/rishabh-sharma-924b32212/" target="_blank">
+    <Button variant="whiteButton" aria-label="Get Started">
+      <FaLinkedinIn></FaLinkedinIn>
+    </Button>
+  </Link>,
+  },
+  {
+    id: 3,
+    title: 'Tanya Sharma',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar2,
     name: 'Tanya Sharma',
     designation: 'Co-founder, CMO',
     review: 5,
-  },
-  {
-    id: 3,
-    title: 'Layout and organized layers',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar3,
-    name: 'Muktanshu Mishra',
-    designation: 'CTO',
-    review: 5,
+    link:<Link path="" target="_blank">
+    <Button variant="whiteButton" aria-label="Get Started">
+      <FaLinkedinIn></FaLinkedinIn>
+    </Button>
+  </Link>,
   },
   {
     id: 4,
-    title: 'Modern look & trending design',
+    title: 'Promit Mandal',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar4,
     name: 'Promit Mandal',
     designation: 'Hardware Engineer',
     review: 4,
+    link:
+  <Link path="https://www.linkedin.com/in/promit-mandal-321b47207/" target="_blank">
+    <Button variant="whiteButton" aria-label="Get Started">
+      <FaLinkedinIn></FaLinkedinIn>
+    </Button>
+  </Link>,
   },
   {
     id: 5,
-    title: 'Modern look & trending design',
+    title: 'Animesh Mandal',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar5,
     name: 'Animesh Mandal',
     designation: 'Content Creator',
-    review: 4,
+    review: '4',
+    link: <Link path="https://www.linkedin.com/in/animesh-mandal-6b642b20a/" target="_blank">
+    <Button variant="whiteButton" aria-label="Get Started">
+      <FaLinkedinIn></FaLinkedinIn>
+    </Button>
+  </Link>,
   },
   {
     id: 6,
-    title: 'Modern look & trending design',
+    title: 'Hemang Pant',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar6,
     name: 'Hemang Pant',
     designation: 'App Developer',
     review: 4,
+    link: <Link path="https://www.linkedin.com/in/hemang-pant-222b7a1a3/" target="_blank">
+    <Button variant="whiteButton" aria-label="Get Started">
+      <FaLinkedinIn></FaLinkedinIn>
+    </Button>
+  </Link>,
   }
 ];
 
@@ -144,15 +169,14 @@ export default function TestimonialCard() {
               <Heading as="h3" sx={styles.title}>
                 {item.title}
               </Heading>
+              <Text sx={styles.designation}>{item.designation}</Text>
+              {item.link}
               <Text sx={styles.description}>{item.description}</Text>
               <div className="reviewer-info">
                   <Heading as="h4" sx={styles.heading}>
                     {item.name}
                   </Heading>
-                  <div sx={styles.row}>
-                    <Text sx={styles.designation}>{item.designation}</Text>
-                    <FaTwitter/>
-                  </div>
+                  <Text sx={styles.designation}>{item.designation}</Text>
                 </div>
             </Box>
           ))}
@@ -273,7 +297,7 @@ const styles = {
     fontSize: [1, 2],
     fontWeight: 700,
     mt: [3, null, null, '22px'],
-    mb: [3, null, null, '22px'],
+    // mb: [3, null, null, '22px'],
     color: 'text',
     lineHeight: 1.6,
   },
