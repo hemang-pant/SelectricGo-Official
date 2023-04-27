@@ -4,11 +4,7 @@ import SectionHeader from 'components/section-header';
 import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
-import {
-  FaTwitter,
-  FaLinkedinIn,FaLinkedin
-} from 'react-icons/fa';
-import { Link } from 'components/link';
+
 import Avatar1 from 'assets/testimonial/avatar1.png';
 import Avatar2 from 'assets/testimonial/Tanya Cof.png';
 import Avatar3 from 'assets/testimonial/avatar3.jpeg';
@@ -176,6 +172,12 @@ export default function TestimonialCard() {
               <Text sx={styles.designation}>{item.designation}</Text>
               {item.link}
               <Text sx={styles.description}>{item.description}</Text>
+              <div className="reviewer-info">
+                  <Heading as="h4" sx={styles.heading}>
+                    {item.name}
+                  </Heading>
+                  <Text sx={styles.designation}>{item.designation}</Text>
+                </div>
             </Box>
           ))}
         </Carousel>
@@ -185,8 +187,14 @@ export default function TestimonialCard() {
 }
 
 const styles = {
+  row:{
+    disp1lay: 'flex',
+    justifyContent: 'flex-end',
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+  },
   carouselWrapper: {
-    display: 'flex',
+    disp1lay: 'flex',
     justifyContent: 'flex-end',
     flexDirection: 'column',
     alignItems: 'flex-end',
