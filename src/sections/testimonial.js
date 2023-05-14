@@ -4,7 +4,11 @@ import SectionHeader from 'components/section-header';
 import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
-
+import {
+  FaTwitter,
+  FaLinkedinIn,FaLinkedin
+} from 'react-icons/fa';
+import { Link } from 'components/link';
 import Avatar1 from 'assets/testimonial/avatar1.png';
 import Avatar2 from 'assets/testimonial/Tanya Cof.png';
 import Avatar3 from 'assets/testimonial/avatar3.jpeg';
@@ -194,7 +198,7 @@ const styles = {
     alignItems: 'flex-end',
   },
   carouselWrapper: {
-    disp1lay: 'flex',
+    display: 'flex',
     justifyContent: 'flex-end',
     flexDirection: 'column',
     alignItems: 'flex-end',
