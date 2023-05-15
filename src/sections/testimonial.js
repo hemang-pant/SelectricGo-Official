@@ -20,7 +20,7 @@ const data = [
   {
     id: 1,
     title: 'Muktanshu Mishra',
-    description: 'Muktanshu oversees the technical aspects of SelectricGo. With a strong background in both technical and business development, Muktanshu brings valuable expertise to the team and is committed to creating something that benefits the cleantech industry. Currently, Muktanshus aspiration is to provide a new, revamped app and website that enhances the user experience and better reflects SelectricGos mission and values.',
+    description: 'Muktanshu oversees the technical aspects of SelectricGo. With a strong background in both technical and business development, Muktanshu brings valuable expertise to the team and is committed to creating something that benefits the cleantech industry.',
     avatar: Avatar3,
     name: 'Muktanshu Mishra',
     designation: 'Co-Founder, CTO',
@@ -34,7 +34,7 @@ const data = [
   {
     id: 2,
     title: 'Rishabh Sharma',
-    description: 'Rishabh is in charge of overseeing product development, growth, and general management at Selectricgo. With a tech background and a passion for business, Rishabh aims to make the world a better place by combining these two fields, and launching a startup provides an ideal platform for pursuing this goal.',
+    description: 'Rishabh is in charge of overseeing product development, growth, and general management at Selectricgo. With a tech background and a passion for business, Rishabh aims to make the world a better place by combining these two fields, and launching a startup',
     avatar: Avatar1,
     designation: 'Co-founder, CEO',
     review: 5,
@@ -47,7 +47,7 @@ const data = [
   {
     id: 3,
     title: 'Tanya Sharma',
-    description:'Tanya is responsible for developing marketing strategies and generating new ideas to promote SelectricGOs services via social media platforms. Tanyas vision is to enhance communication and engagement with interested customers through social channels, tapping into a much larger community and expanding the reach of their services. This approach aims to ensure that SelectricGOs services are accessible to more people and ultimately benefit a wider audience.',
+    description:'Tanya is responsible for developing marketing strategies and generating new ideas to promote SelectricGOs services via social media platforms. Tanyas vision is to enhance communication and engagement with interested customers through social channels',
     avatar: Avatar2,
     name: 'Tanya Sharma',
     designation: 'Co-founder, CMO',
@@ -61,7 +61,7 @@ const data = [
   {
     id: 4,
     title: 'Promit Mandal',
-    description:'Promit is responsible for managing the hardware team at Selectricgo. Promit has been a part of the company for over eight months and has found the journey so far to be thrilling. He looks forward to exploring more opportunities with Selectricgo and contributing to its growth and success in the future.',
+    description:'Promit is responsible for managing the hardware team at Selectricgo. Promit has been a part of the company for over eight months and has found the journey so far to be thrilling. He looks forward to exploring more opportunities with Selectricgo.',
     avatar: Avatar4,
     name: 'Promit Mandal',
     designation: 'Hardware Engineer',
@@ -76,7 +76,7 @@ const data = [
   {
     id: 5,
     title: 'Animesh Mandal',
-    description:'Animesh who works as a content creator for SelectricGo. Animesh has been part of the team for over seven months now and has found the experience to be exciting and fulfilling. He is eager to continue exploring new prospects with Selectricgo and contribute his skills to help the company grow and succeed in the future.',
+    description:'Animesh who works as a content creator for SelectricGo. Animesh has been part of the team for over seven months now and has found the experience to be exciting and fulfilling. He is eager to continue exploring new prospects with Selectricgo.',
     avatar: Avatar5,
     name: 'Animesh Mandal',
     designation: 'Content Creator',
@@ -90,7 +90,7 @@ const data = [
   {
     id: 6,
     title: 'Hemang Pant',
-    description: 'Hemang Pant is responsible for managing the SelectricGo app. With a strong background in app development, Hemang brings valuable expertise to the team and is constantly working on improving the app. Hemang has found the journey with SelectricGo thus far to be great and has high expectations for the future of the company.',
+    description: 'Hemang Pant is responsible for managing the SelectricGo app. With a strong background in app development, Hemang brings valuable expertise to the team and is constantly working on improving the app and has high expectations for SelectricGO.',
     avatar: Avatar6,
     name: 'Hemang Pant',
     designation: 'App Developer',
