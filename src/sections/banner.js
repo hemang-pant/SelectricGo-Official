@@ -32,7 +32,7 @@ export default function Banner() {
           <Flex>
             <Link path="https://play.google.com/store/apps/details?id=com.selectricgo.selectricgoapp" target="_blank">
               <Button variant="whiteButton" aria-label="Get Started">
-                Download the App dev branch
+                Download the App
               </Button>
             </Link>
           </Flex>
