@@ -11,7 +11,7 @@ import {
 import { Link } from 'components/link';
 import Avatar1 from 'assets/testimonial/avatar1.png';
 import Avatar2 from 'assets/testimonial/Tanya Cof.png';
-import Avatar3 from 'assets/testimonial/avatar3.jpeg';
+import Avatar3 from 'assets/testimonial/avatar3.png.jpg';
 import Avatar4 from 'assets/testimonial/avatar4.png';
 import Avatar5 from 'assets/testimonial/avatar5.png';
 import Avatar6 from 'assets/testimonial/avatar6.png';
@@ -20,8 +20,7 @@ const data = [
   {
     id: 1,
     title: 'Muktanshu Mishra',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+    description: 'Muktanshu oversees the technical aspects of SelectricGo. With a strong background in both technical and business development, Muktanshu brings valuable expertise to the team and is committed to creating something that benefits the cleantech industry.',
     avatar: Avatar3,
     name: 'Muktanshu Mishra',
     designation: 'Co-Founder, CTO',
@@ -35,8 +34,7 @@ const data = [
   {
     id: 2,
     title: 'Rishabh Sharma',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+    description: 'Rishabh is in charge of overseeing product development, growth, and general management at Selectricgo. With a tech background and a passion for business, Rishabh aims to make the world a better place by combining these two fields, and launching a startup',
     avatar: Avatar1,
     designation: 'Co-founder, CEO',
     review: 5,
@@ -49,8 +47,7 @@ const data = [
   {
     id: 3,
     title: 'Tanya Sharma',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+    description:'Tanya is responsible for developing marketing strategies and generating new ideas to promote SelectricGOs services via social media platforms. Tanyas vision is to enhance communication and engagement with interested customers through social channels',
     avatar: Avatar2,
     name: 'Tanya Sharma',
     designation: 'Co-founder, CMO',
@@ -64,8 +61,7 @@ const data = [
   {
     id: 4,
     title: 'Promit Mandal',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+    description:'Promit is responsible for managing the hardware team at Selectricgo. Promit has been a part of the company for over eight months and has found the journey so far to be thrilling. He looks forward to exploring more opportunities with Selectricgo.',
     avatar: Avatar4,
     name: 'Promit Mandal',
     designation: 'Hardware Engineer',
@@ -80,8 +76,7 @@ const data = [
   {
     id: 5,
     title: 'Animesh Mandal',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+    description:'Animesh who works as a content creator for SelectricGo. Animesh has been part of the team for over seven months now and has found the experience to be exciting and fulfilling. He is eager to continue exploring new prospects with Selectricgo.',
     avatar: Avatar5,
     name: 'Animesh Mandal',
     designation: 'Content Creator',
@@ -95,8 +90,7 @@ const data = [
   {
     id: 6,
     title: 'Hemang Pant',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+    description: 'Hemang Pant is responsible for managing the SelectricGo app. With a strong background in app development, Hemang brings valuable expertise to the team and is constantly working on improving the app and has high expectations for SelectricGO.',
     avatar: Avatar6,
     name: 'Hemang Pant',
     designation: 'App Developer',
@@ -306,7 +300,12 @@ const styles = {
     lineHeight: 1.6,
   },
   description: {
-    fontSize: [1, null, null, 2],
+    textOverflow: 'ellipsis',
+    overflow: 'hidden', 
+    //width: '160px',
+    height: '14em', 
+    whiteSpace: 'pre-line',
+    fontSize: [1, null, null, 1],
     fontWeight: 'normal',
     color: 'text',
     lineHeight: [1.85, null, 2],
