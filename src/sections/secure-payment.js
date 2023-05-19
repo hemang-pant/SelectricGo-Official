@@ -18,7 +18,7 @@ const data = {
 
 export default function SecurePayment() {
   return (
-    <section id="achievements"sx={{ variant: 'section.securePayment' }}>
+    <section sx={{ variant: 'section.securePayment' }} id="earn">
       <Box sx={styles.bgOverlay} />
       <Container sx={styles.containerBox}>
       <Box sx={styles.contentBox}>

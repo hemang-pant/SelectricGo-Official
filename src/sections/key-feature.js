@@ -14,24 +14,24 @@ const data = [
     id: 1,
     imgSrc: Vector,
     altText: 'Vector',
-    title: 'Achievement 1',
+    title: 'AIC-Sangam Incubated',
     text:
-      'Achievement 1 long text',
+      'SelectricGO is incubated at AIC Sangam, one of the finest clean-tech incubators of India backed by NITI AYOG.',
   },
   {
     id: 2,
     imgSrc: Editing,
     altText: 'Designate',
-    title: 'Achievement 2',
-    text: 'Achievement 2 long text',  
+    title: 'STARTUP INDIA GRANT',
+    text: 'SelectricGo was able to secure a grant worth 5 Lac Rupees ad it is now a DPIIT-recognised startup.',  
   },
   {
     id: 3,
     imgSrc: Speed,
     altText: 'Navigate',
-    title: 'achivement 3',
+    title: 'DTU IIF Incubated',
     text:
-      'achievement 3 long text',
+      'SelectricGO has been recognised by DTU and have been successfully incubated at DTU-IIF.',
   },
 ];
 
