@@ -41,8 +41,8 @@ export default function KeyFeature() {
       <Container>
       <box sx={styles.container}>
       <TextFeature
-      subTitle={"Quality features"}
-      title={"Meet exciting feature of app"}
+      subTitle={"Our Achievements"}
+      title={"Some recognitions and inclusions"}
       description={data.description}
       btnName={data.btnName}
       btnURL={data.btnURL}
