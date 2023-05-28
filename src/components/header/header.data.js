@@ -8,7 +8,7 @@ export default [
     label: 'Features',
   },
   {
-    path: 'earn',
+    path: 'SecurePayment',
     label: 'Achievements',
   },
   {

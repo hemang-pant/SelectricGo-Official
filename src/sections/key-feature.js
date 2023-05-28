@@ -4,9 +4,9 @@ import { Container, Grid } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
-import Vector from 'assets/key-feature/vector.svg';
-import Editing from 'assets/key-feature/editing.svg';
-import Speed from 'assets/key-feature/speed.svg';
+import Vector from 'assets/key-feature/vector.png';
+import Editing from 'assets/key-feature/editing.png';
+import Speed from 'assets/key-feature/speed.png';
 import PatternBG from 'assets/patternBG.png';
 
 const data = [
@@ -102,8 +102,12 @@ const styles = {
     pt: [0, null, null, null, null, null, null, 3],
     gridGap: ['35px 0', null, '40px 0'],
     gridTemplateColumns: [
+      'repeat(1,1fr)',
+      'repeat(1,1fr)',
+      'repeat(1,1fr)',
+      'repeat(1,1fr)',
+      'repeat(1,1fr)',
       'repeat(3,1fr)',
-      null,
     ],
     width: ['100%', '80%', '100%'],
     mx: 'auto',
