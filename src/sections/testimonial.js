@@ -93,7 +93,7 @@ const data = [
     description: 'Hemang Pant is responsible for managing the SelectricGo app. With a strong background in app development, Hemang brings valuable expertise to the team and is constantly working on improving the app and has high expectations for SelectricGO.',
     avatar: Avatar6,
     name: 'Hemang Pant',
-    designation: 'App Developer',
+    designation: 'App Lead',
     review: 4,
     link: <Link path="https://www.linkedin.com/in/hemang-pant-222b7a1a3/" target="_blank">
     <Button variant="whiteButton" aria-label="Get Started">
@@ -170,12 +170,7 @@ export default function TestimonialCard() {
               <Text sx={styles.designation}>{item.designation}</Text>
               {item.link}
               <Text sx={styles.description}>{item.description}</Text>
-              <div className="reviewer-info">
-                  <Heading as="h4" sx={styles.heading}>
-                    {item.name}
-                  </Heading>
-                  <Text sx={styles.designation}>{item.designation}</Text>
-                </div>
+              
             </Box>
           ))}
         </Carousel>
