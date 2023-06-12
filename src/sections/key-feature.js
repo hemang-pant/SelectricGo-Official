@@ -1,67 +1,53 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Grid } from 'theme-ui';
-import TextFeature from 'components/text-feature';
-import SectionHeader from '../components/section-header';
-import FeatureCardColumn from 'components/feature-card-column.js';
-import Vector from 'assets/key-feature/vector.png';
-import Editing from 'assets/key-feature/editing.png';
-import Speed from 'assets/key-feature/speed.png';
+import { Container, Grid, Box, Heading, Text } from 'theme-ui';
+import SectionHeader from 'components/section-header';
+
 import PatternBG from 'assets/patternBG.png';
+import ArrowOdd from 'assets/arrowOdd.png';
+import ArrowEven from 'assets/arrowEven.png';
 
 const data = [
   {
-    id: 1,
-    imgSrc: Vector,
-    altText: 'Vector',
+    id: '1',
     title: 'AIC-Sangam Incubated',
     text:
-      'SelectricGO is incubated at AIC Sangam, one of the finest clean-tech incubators of India backed by NITI AYOG.',
+      "Incubated under AIC Sangam, India's top cleantech incubator, we are revolutionizing sustainable mobility with cutting-edge electric vehicles and advanced mobility services.",
   },
   {
     id: 2,
-    imgSrc: Editing,
-    altText: 'Designate',
-    title: 'STARTUP INDIA GRANT',
-    text: 'SelectricGo was able to secure a grant worth 5 Lac Rupees ad it is now a DPIIT-recognised startup.',  
-  },
+    title: 'Startup India Grantee',
+    text:
+      "We are a DPIIT-recognized startup, driven by our commitment to sustainable mobility. As a proud recipient of a 5 lac grant from Startup India, we are accelerating our efforts to transform transportation.",  },
   {
     id: 3,
-    imgSrc: Speed,
-    altText: 'Navigate',
-    title: 'DTU IIF Incubated',
+    title: 'DTU IIF Pre-Incubated',
     text:
-      'SelectricGO has been recognised by DTU and have been successfully incubated at DTU-IIF.',
-  },
+      "We are also proud to be pre-incubated under DTU IIF. This prestigious association provides us with invaluable resources, mentorship, and access to a vibrant entrepreneurial ecosystem.",  },
+  {
+    id: 4,
+    title: 'Y-Combinator Top 10%',
+    text:
+      "Proving as a dynamic startup even in the ideation phase, we take great pride in being recognized as a top 10% candidate at Y Combinator 2021 Applications, One of the world's most renowned startup accelerators.",  },
 ];
 
-export default function KeyFeature() {
+export default function WorkFlow() {
   return (
-    <section sx={styles.workflow} id="feature">
+    <section sx={styles.workflow}>
       <Container>
-      <box sx={styles.container}>
-      <TextFeature
-      subTitle={"Our Achievements"}
-      title={"Some recognitions and inclusions"}
-      description={data.description}
-      btnName={data.btnName}
-      btnURL={data.btnURL}
-      isdark={true}
-    />
-    </box>
-    {/*<SectionHeader
-          slogan="Quality features"
-          title="Meet exciting feature of app"
-  />*/}
+        <SectionHeader
+          slogan="Our Achievements"
+          title="Some Accolades & Recognitions"
+          isWhite={true}
+        />
+
         <Grid sx={styles.grid}>
           {data.map((item) => (
-            <FeatureCardColumn
-              key={item.id}
-              src={item.imgSrc}
-              alt={item.title}
-              title={item.title}
-              text={item.text}
-            />
+              <Box sx={styles.wrapper}>
+                <Heading sx={styles.wrapper.title}>{item.title}</Heading>
+                <Text sx={styles.wrapper.subheading}>{item.subheading}</Text>
+                <Text sx={styles.wrapper.subTitle}>{item.text}</Text>
+              </Box>
           ))}
         </Grid>
       </Container>
@@ -70,11 +56,6 @@ export default function KeyFeature() {
 }
 
 const styles = {
-  container: {
-    pl: [0, null, null, null, '35px', null, '55px', 6],
-    mb: [3, null, null, null, 1],
-    textAlign: ['center', null, null, 'center'],
-  },
   workflow: {
     backgroundColor: 'primary',
     backgroundImage: `url(${PatternBG})`,
@@ -98,21 +79,101 @@ const styles = {
     },
   },
   grid: {
-    px: [0, null, null, '40px', null, '10px'],
-    pt: [0, null, null, null, null, null, null, 3],
-    gridGap: ['35px 0', null, '40px 0'],
+    mb: -1,
+    pt: 0,
+    gridGap: [
+      '35px 0',
+      null,
+      '45px 50px',
+      null,
+      '50px 25px',
+      null,
+      null,
+      '50px 65px',
+    ],
     gridTemplateColumns: [
       'repeat(1,1fr)',
-      'repeat(1,1fr)',
-      'repeat(1,1fr)',
-      'repeat(1,1fr)',
-      'repeat(1,1fr)',
-      'repeat(3,1fr)',
+      null,
+      'repeat(2,1fr)',
+      null,
+      'repeat(4,1fr)',
     ],
+  },
+  card: {
+    display: 'flex',
+    flexDirection: 'column',
+    position: 'relative',
+    textAlign: ['center', null, 'left'],
     width: ['100%', '80%', '100%'],
     mx: 'auto',
-    '& > div': {
-      px: [0, '15px', null, '25px', null, '30px', '40px', '60px'],
+    '&::before': {
+      position: 'absolute',
+      content: '""',
+      top: 0,
+      left: [0, null, null, null, null, 75, null, 100],
+      backgroundRepeat: `no-repeat`,
+      backgroundPosition: 'center center',
+      width: 215,
+      height: 60,
+      opacity: 0.3,
+      '@media screen and (max-width:1220px)': {
+        display: 'none',
+      },
+    },
+    '&:nth-of-type(2n-1)::before': {
+      backgroundImage: `url(${ArrowOdd})`,
+    },
+    '&:nth-of-type(2n)::before': {
+      backgroundImage: `url(${ArrowEven})`,
+      top: 17,
+    },
+    '&:last-child::before': {
+      display: 'none',
+    },
+  },
+
+  iconBox: {
+    width: ['50px', null, '60px', null, null, '70px'],
+    height: ['50px', null, '60px', null, null, '70px'],
+    flexShrink: 0,
+    borderRadius: [15, null, 23, null, null, 30],
+    backgroundColor: 'white',
+    display: 'flex',
+    alignItems: 'center',
+    mb: [5, null, null, null, null, 6],
+    mx: ['auto', null, 0],
+    fontSize: [6, null, 7, null, null, '30px'],
+    fontWeight: 700,
+    justifyContent: 'center',
+    color: '#234582',
+  },
+  wrapper: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    mt: '-5px',
+    title: {
+      fontSize: [3, null, 4, null, null, 5],
+      color: 'secondary',
+      lineHeight: [1.4, null, null, null, null, 1.55],
+      pr: [0, null, null, null, null, 2],
+      mb: [2, 3],
+    },
+    subheading: {
+      fontSize: 1,
+      fontWeight: 800,
+      lineHeight: [1.85, null, null, 1.9, 2],
+      color: 'white',
+      opacity: 0.95,
+      pr: [0, null, null, null, null, 5],
+    },
+    subTitle: {
+      fontSize: 1,
+      fontWeight: 400,
+      lineHeight: [1.85, null, null, 1.9, 2],
+      color: 'white',
+      opacity: 0.65,
+      pr: [0, null, null, null, null, 5],
     },
   },
 };
