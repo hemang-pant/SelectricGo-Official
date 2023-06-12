@@ -23,13 +23,10 @@ export default function IndexPage() {
           <SEO title="SelectricGO" />
           <Banner />
           <CoreFeature />
-          <KeyFeature />
-          
+          <WorkFlow />  
           <Feature />
-          <WorkFlow /> 
-          {/*<SecurePayment />*/}
+          <KeyFeature />  
           <TestimonialCard />
-          
         </Layout>
       </StickyProvider>
     </ThemeProvider>

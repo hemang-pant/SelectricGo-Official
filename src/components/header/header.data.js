@@ -8,7 +8,7 @@ export default [
     label: 'Features',
   },
   {
-    path: 'feature',
+    path: 'key-feature',
     label: 'Achievements',
   },
   {
