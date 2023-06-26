@@ -64,7 +64,7 @@ const data = [
     description:'Promit is responsible for managing the hardware team at Selectricgo. Promit has been a part of the company for over eight months and has found the journey so far to be thrilling. He looks forward to exploring more opportunities with Selectricgo.',
     avatar: Avatar4,
     name: 'Promit Mandal',
-    designation: 'Hardware Engineer',
+    designation: 'Hardware Lead',
     review: 4,
     link:
   <Link path="https://www.linkedin.com/in/promit-mandal-321b47207/" target="_blank">
@@ -79,7 +79,7 @@ const data = [
     description:'Animesh who works as a content creator for SelectricGo. Animesh has been part of the team for over seven months now and has found the experience to be exciting and fulfilling. He is eager to continue exploring new prospects with Selectricgo.',
     avatar: Avatar5,
     name: 'Animesh Mandal',
-    designation: 'Content Creator',
+    designation: 'Growth Lead',
     review: '4',
     link: <Link path="https://www.linkedin.com/in/animesh-mandal-6b642b20a/" target="_blank">
     <Button variant="whiteButton" aria-label="Get Started">
