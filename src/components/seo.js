@@ -2,10 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'startup apps landing page',
-  author = 'RedQ, Inc',
+  description = 'SelectricGO: The Ultimate App for all your EV needs.',
+  author = 'SelectricGo',
   meta,
-  title = 'startup landing title',
+  title = 'SelectricGO',
 }) {
   const metaData = [
     {
