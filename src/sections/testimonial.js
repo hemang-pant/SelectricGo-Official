@@ -34,7 +34,7 @@ const data = [
   {
     id: 2,
     title: 'Rishabh Sharma',
-    description: 'Rishabh is in charge of overseeing product development, growth, and general management at Selectricgo. With a tech background and a passion for business, Rishabh aims to make the world a better place by combining these two fields, and launching a startup',
+    description: 'Rishabh is in charge of overseeing product development, growth, and general management at SelectricGo. With a tech background and a passion for business, Rishabh aims to make the world a better place by combining these two fields, and launching a startup',
     avatar: Avatar1,
     designation: 'Co-founder, CEO',
     review: 5,
@@ -61,7 +61,7 @@ const data = [
   {
     id: 4,
     title: 'Promit Mandal',
-    description:'Promit is responsible for managing the hardware team at Selectricgo. Promit has been a part of the company for over eight months and has found the journey so far to be thrilling. He looks forward to exploring more opportunities with Selectricgo.',
+    description:'Promit is responsible for managing the hardware team at SelectricGo. Promit has been a part of the company for over eight months and has found the journey so far to be thrilling. He looks forward to exploring more opportunities with SelectricGo.',
     avatar: Avatar4,
     name: 'Promit Mandal',
     designation: 'Hardware Lead',
