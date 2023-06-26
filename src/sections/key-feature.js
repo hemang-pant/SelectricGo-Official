@@ -33,7 +33,7 @@ const data = [
 
 export default function WorkFlow() {
   return (
-    <section sx={styles.workflow}>
+    <section id='key-feature' sx={styles.workflow}>
       <Container>
         <SectionHeader
           slogan="Our Achievements"
